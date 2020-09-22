@@ -1,4 +1,5 @@
-"""You are given a positive integer . Print a numerical triangle of height  like the one below:
+"""
+You are given a positive integer . Print a numerical triangle of height  like the one below:
 
 1
 22
@@ -28,13 +29,9 @@ Sample Output
 1
 22
 333
-4444"""
+4444
 
-for i in range(1,int(input())): #More than 2 lines will result in 0 score. Do not leave a blank line also
-    print(i*10**i//9)
-    
-
-"""Intestesting take on the problem
+Intestesting take on the problem
 Initially, I did
 
 print(i*str(i))
@@ -50,4 +47,10 @@ so
 
 So by //, I am flooring it
 
-Interesting yet simple solution"""
+Interesting yet simple solution
+
+Solution Below
+"""
+
+for i in range(1,int(input())): #More than 2 lines will result in 0 score. Do not leave a blank line also
+    print(i*10**i//9)
