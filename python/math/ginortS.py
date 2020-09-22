@@ -28,7 +28,7 @@ Brilliant Answer:
 l,u,o,e=[],[],[],[]
 
 for i in sorted(input()):
-    if i.isalpha():
+    if i.isalpha(): # Method to check if all characters in text are letters
         x = u if i.isupper() else l
     else:
         x = o if int(i)%2 else e
