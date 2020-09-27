@@ -28,6 +28,8 @@ print set(list(a)) | set(list(b))
 #Note do not change &&& or ||| or & or |
 #Only change those '&&' which have space on both sides.
 #Only change those '|| which have space on both sides.
+
+
 Sample Output
 
 a = 1;
