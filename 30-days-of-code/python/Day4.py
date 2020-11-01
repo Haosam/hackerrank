@@ -34,7 +34,7 @@ for i in range(0, t):
     
 ################################################ Personal Preference Below this line ##########################################################
     
-    class Person:
+class Person:
     def __init__(self,initialAge):
         # Add some more code to run some checks on initialAge
         self.age = initialAge
