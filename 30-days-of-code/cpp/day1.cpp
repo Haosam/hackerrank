@@ -19,6 +19,9 @@ int main() {
     cin >> doubleNum;
     cin.ignore();
     getline(cin, stringName);
+    // cin.ignore() ignores an endline of character
+    //getline will read the whole line
+    
     // Note: If you have trouble reading the entire string, please go back and review the Tutorial closely.
     
     // Print the sum of both integer variables on a new line.
@@ -28,7 +31,7 @@ int main() {
     // Print the sum of the double variables on a new line.
     double addDoubleNum;
     addDoubleNum = doubleNum + d;
-    cout << fixed << setprecision(1) << addDoubleNum << '\n';
+    cout << fixed << setprecision(1) << addDoubleNum << '\n'; // fixed<<setprecision(1) allows the code to output .0, to the one's decimal place
     // Concatenate and print the String variables on a new line
     // The 's' variable above should be printed first.
     string fullstring;
