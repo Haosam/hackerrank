@@ -23,3 +23,18 @@ if __name__ == '__main__':
     fptr.write(str(result) + '\n')
 
     fptr.close()
+
+    ####### Recursion Function########
+    
+    """
+    Factorial functions are essentially
+    #n! = n x (n-1)!
+    like 3! = 3x2x1, which is also 3x(3-1)!
+    so to achieve that in a function,
+    we have to multiply it by the previous 'n'value of the function
+    so
+    n = int(input())
+    def factorial_function(n):
+        n = n*factorial(n-1)
+    This makes it multiply by the previous n function
+    """
