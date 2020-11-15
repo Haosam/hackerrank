@@ -1,8 +1,22 @@
-# Read a full line of input from stdin and save it to our dynamically typed variable, input_string.
-input_string = input()
+package main
 
-# Print a string literal saying "Hello, World." to stdout.
-print('Hello, World.')
-print(input_string)
+import (
+    "bufio"
+    "fmt"
+    "os"
+)
 
-# TODO: Write a line of code here that prints the contents of input_string to stdout.
+func main() {
+    // Read input from STDIN. Print output to STDOUT
+    fmt.Println("Hello, World.")
+    scanner := bufio.NewScanner(os.Stdin)
+
+    for scanner.Scan() {
+        inputString := scanner.Text()
+        fmt.Println(inputString)
+    }
+
+    if err := scanner.Err(); err != nil {
+        os.Exit(1)
+    }
+}
